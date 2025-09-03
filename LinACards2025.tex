@@ -345,4 +345,323 @@
 \field 01.32
 \end{note}
 
+
+\begin{note}{LinA-I-Gruppen-Verknüpfung}
+  \field
+  \field
+  Eine (binäre) \textbf{Verknüpfung} auf einer Menge \(M\) ist \cloze{1}eine Abbildung \(M\times M\to M\).\clend
+  \field
+  \field Gruppen
+  \field Definition
+  \field 02.01
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Verknüpfung-assoziativ}
+  \field
+  \field
+  Eine Verknüpfung \(\star\) auf einer Menge \(M\) ist \textbf{assoziativ}, falls gilt:
+  \cloze{1}
+  \[
+    x\star(y\star z) = (x\star y)\star z
+  \]
+  für alle \(x,y,z \in M\).
+  \clend
+  \field
+  \field Definition
+  \field 02.02
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Verknüpfung-kommutativ}
+  \field
+  \field
+  Eine Verknüpfung \(\star\) auf einer Menge \(M\) ist \textbf{kommutativ}, falls gilt:
+  \cloze{1}
+  \[
+    x\star y = y\star x
+  \]
+  für alle \(x,y \in M\).
+  \clend
+  \field
+  \field Gruppen
+  \field Definition
+  \field 02.02
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Verknüpfung-neutrales-Element}
+  \field
+  \field
+    Ein \textbf{neutrales Element} einer Verknüpfung \(\star\) auf \(M\) ist ein Element \(e\in M\), für das gilt:
+    \cloze{1}
+    \[
+      e\star x = x = x\star e
+    \]
+    für alle \(x\in M\).
+    \clend
+\field Definition
+\field 02.03
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Verknüpfung-inverses-Element}
+  \field
+  \field
+  Sei \(\star\) eine Verknüpfung auf \(M\) mit neutralem Element~\(e\). 
+  Ein \textbf{inverses Element} zu \(x\in M\) ist ein \(y\in M\), für das gilt:
+  \cloze{1}
+  \[
+    x\star y = e = y\star x
+  \]
+  \clend
+  \field
+  \field Gruppen
+  \field Definition  
+  \field 02.03
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Def-Gruppe-a}
+  \field
+  \field
+  Eine \textbf{Gruppe} besteht aus einer Menge \(G\) und aus \cloze{1}einer Verknüpfung
+  \(\star\) auf \(G\).\clend
+  \field
+  \field Gruppen
+  \field Definition
+  \field 02.03
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Def-Gruppe-b}
+  \field
+  \field
+  Eine \textbf{Gruppe} \((G,\star)\) muss den folgenden Axiomen genügen:
+  \begin{center}
+    \begin{itemize}
+    \item[(G1)] \cloze{1}\(\star\) ist assoziativ.\clend
+    \item[(G2)] \cloze{2}\(\star\) besitzt ein neutrales Element.\clend
+    \item[(G3)] \cloze{3}Jedes \(g\in G\) besitzt ein Inverses bezüglich \(\star\).\clend
+    \end{itemize}
+  \end{center}
+  \field
+  \field Gruppen
+  \field Definition
+  \field 02.03
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-abelsch}
+  \field
+  \field
+  Ein Gruppe \((G,\star)\) ist \textbf{abelsch}, falls \cloze{1}die Verknüpfung \(\star\) kommutativ ist.\clend
+  \field
+  In diesem Fall benutzen wir in der Regel das Symbol „\(+\)“ für die Verknüpfung.
+  \field Gruppen
+  \field Definition
+  \field 02.03
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Inverses-des-Produkts}
+  \field
+  \field
+  In einer Gruppe \((G,\cdot)\) ist das Inverse eines Produkts \(x\cdot y\) gegeben durch
+  \begin{tabular}{rcl}
+    \((x\cdot y)^{-1}\) & \(~=~\) & \cloze{1}\(y^{-1}\cdot x^{-1}\)\clend
+  \end{tabular}
+  \field
+  \emph{Reihenfolge beachten!}
+  \field Gruppen
+  \field Satz    
+  \field 02.07
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Def-Untergruppe}
+  \field
+  \field
+  Eine \textbf{Untergruppe} einer Gruppe \((G,\cdot)\) ist eine Teilmenge \(H\subset G\), für die gilt:
+  \begin{enumerate}
+  \item Die Verknüpfung \(\cdot\) lässt sich \cloze{1}einschränken zu einer Verknüpfung \(H\times H\to H\).\clend
+  \item \cloze{2}Zusammen mit der eingeschränkten Verknüpfung ist \(H\) selbst wieder eine Gruppe.\clend
+  \end{enumerate}
+  \field
+  \field Gruppen
+  \field Definition
+  \field 02.08
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Kriterien-Untergruppe}
+  \field
+  \field
+  Sei \((G,\cdot)\) eine Gruppe mit neutralem Element \(1_G\). Eine Teilmenge \(H\subset G\) ist genau dann eine Untergruppe, wenn gilt:
+  \begin{center}
+    \begin{enumerate}[(i)]
+    \item \cloze{1}\(1_G \in H\)\clend
+    \item \cloze{2}\(\forall x,y\in H\colon x\cdot y \in H\)\clend
+    \item \cloze{3}\(\forall x\in H\colon \quad x^{-1} \in H\)\clend
+    \end{enumerate}
+  \end{center}
+  \field
+  \field Gruppen
+  \field Notiz    
+  \field 02.09
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Homomorphismus}
+  \field
+  \field
+  Eine Abbildung zwischen Gruppen \(f\colon (G,\star)\to(H,\ast)\) ist ein \textbf{Gruppenhomomorphismus}, falls gilt:
+  \cloze{1}
+  \[
+    f(g_1\star g_2) = f(g_1)\ast f(g_2)
+  \]
+  für alle \(g_1,g_2 \in G\).
+  \clend
+  \field
+  \field Gruppen
+  \field Definition   
+  \field 02.10
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Homomorphismus-Kern}
+  \field
+  \field
+  Der \textbf{Kern} eines Gruppenhomomorphismus \[f\colon G_1\to G_2\] besteht aus \cloze{1}allen Elementen von \(G_1\), die auf das neutrale Element von \(G_2\) abgebildet werden.\clend
+  \field
+  \field Gruppen    
+  \field Definition
+  \field 02.15
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Untergruppe-Linksnebenklasse}
+  \field
+  \field
+  Die \textbf{Linksnebenklasse} eines Gruppenelements \(g\) bezüglich einer Untergruppe \(H\) von \((G,\star)\) ist die Teilmenge
+  \cloze{1}
+  \[
+    g\star H := \{g\star h \mid h\in H\}.
+  \]
+  \clend
+  \field
+  \field Gruppen
+  \field Definition    
+  \field 02.17
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Untergruppe-normal}
+  \field
+  \field
+  Eine Untergruppe ist \textbf{normal}, wenn \cloze{1}Links- und Rechtsnebenklassen übereinstimmen.\clend
+  \field
+  (\(g\star H = H\star g\) für alle \(g\in G\).)
+  \field Gruppen
+  \field Definition    
+  \field 02.19
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Untergruppe-Linksnebenklassen-Gruppenstruktur}
+  \field
+  \field
+  Die Menge aller Linksnebenklassen einer Untergruppe besitzt eine natürliche Gruppenstruktur, sofern \cloze{1}die Untergruppe normal ist.\clend
+  \field
+  (In diesem Fall sind Linksnebenklassen gleich Rechtsnebenklassen, und die Menge aller dieser Nebenklassen mit obiger Gruppenstruktur heißt Quotientengruppe.)
+  \field Gruppen
+  \field Satz  
+  \field 2.21
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Quotientengruppe}
+  \field
+  \field
+  Die \textbf{Quotientengruppe} \(G/H\) einer Gruppe modulo einer normalen Untergruppe besteht aus \cloze{1}den (Rechts- = Links-)\allowbreak Nebenklassen von \(H\) in \(G\).\clend
+  \field
+  \field Gruppen
+  \field Definition
+  \field 02.21
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Def-Permutation}
+  \field
+  \field
+  Eine \textbf{\(n\)-stellige Permutation} ist \cloze{1}eine bijektive Abbildung
+  \[
+    \{1,\dots, n\} \xrightarrow{\quad\cong\quad} \{1,\dots,n\}.
+  \]
+  \clend
+  \field
+  \field Gruppen
+  \field Definition  
+  \field 02.26
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Def-symmetrische-Gruppe-a}
+  \field
+  \field
+  Die \textbf{symmetrische Gruppe} \(S_n\) besteht aus \cloze{1}allen \(n\)-stelligen Permutationen.\clend
+  \field
+  \field Gruppen
+  \field Definition
+  \field 02.27
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Def-symmetrische-Gruppe-b}
+  \field
+  \field
+  Die \textbf{symmetrische Gruppe} \(S_n\) ist die Menge aller \(n\)-stelliger Permutationen zusammen mit \cloze{2}der Komposition\clend\ als Verknüpfung.
+  \field
+  \field Gruppen
+  \field Definition  
+  \field 02.27
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Def-Permutation-Fehlstand}
+  \field
+  \field
+  Ein \textbf{Fehlstand} einer Permutation \(\sigma\in S_n\) ist \cloze{1}eine zwei-elementige Teilmenge \(\{i,k\}\subseteq\{1,\dots, n\}\) mit
+  \begin{align*}
+    && i&<k &&\text{ und } &\sigma(i) &> \sigma(k)
+  \end{align*}
+  \clend
+  \field
+  \field Gruppen
+  \field Definition 
+  \field 02.29
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Def-Permutation-Signum}
+  \field
+  \field
+  Das \textbf{Signum} einer Permutation \(\sigma\) ist gegeben durch
+  \begin{tabular}{rcl}
+    \(\signum(\sigma)\) & \(~:=~\) & \cloze{1}\((-1)^{\text{Anzahl der Fehlstände von \(\sigma\)}}\)\clend
+  \end{tabular}
+  \field
+  \field Gruppen
+  \field Definition
+  \field 02.29
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Permutation-Signum-Homomorphismus}
+  \field
+  \field
+  Das Signum definiert einen Gruppenhomomorphismus \(S_n\to \{\pm 1\}\).  Das bedeutet:
+  \cloze{1}
+  \[
+    \signum(\sigma_1\circ\sigma_2) = \signum(\sigma_1)\cdot\signum(\sigma_2)
+  \]
+  \clend
+  \field
+  \field Gruppen
+  \field Satz   
+  \field 02.30
+\end{note}
+
+\begin{note}{LinA-I-Gruppen-Def-alternierende-Gruppe}
+  \field
+  \field
+  Die \textbf{alternierende Gruppe} \(A_n\) ist \cloze{1}der Kern des Signums.\clend
+  \field
+  \[
+    A_n := \ker(\signum\colon S_n \to \{\pm 1\})
+  \]
+  \field Gruppen
+  \field Definition
+  \field 02.31
+\end{note}
+
+
 \end{document}

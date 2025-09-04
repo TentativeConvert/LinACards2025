@@ -44,7 +44,6 @@
 \newcommand{\iTop}{\underline{\smash{\mathsf{Top}}}}  % internal hom in Top
 \newcommand{\iAut}{\underline{\smash{\mathsf{Aut}}}}  
 \newcommand{\Aut}{\mathrm{Aut}}
-\newcommand{\Mor}{\mathrm{Mor}}
 \newcommand{\Hom}{\mathrm{Hom}}
 \DeclareMathOperator{\signum}{sgn}
 \DeclareMathOperator{\rank}{rk}
@@ -280,6 +279,7 @@
   \field
   Eine \textbf{Äquivalenzrelation} ist eine 
   \begin{center}
+    \par
     \cloze{1}\emph{reflexive}\clend\\
     \cloze{2}\emph{symmetrische}\clend\\
     \cloze{3}\emph{transitive}\clend
@@ -367,6 +367,7 @@
   für alle \(x,y,z \in M\).
   \clend
   \field
+  \field Gruppen
   \field Definition
   \field 02.02
 \end{note}
@@ -390,15 +391,17 @@
 \begin{note}{LinA-I-Gruppen-Verknüpfung-neutrales-Element}
   \field
   \field
-    Ein \textbf{neutrales Element} einer Verknüpfung \(\star\) auf \(M\) ist ein Element \(e\in M\), für das gilt:
-    \cloze{1}
-    \[
-      e\star x = x = x\star e
-    \]
-    für alle \(x\in M\).
-    \clend
-\field Definition
-\field 02.03
+  Ein \textbf{neutrales Element} einer Verknüpfung \(\star\) auf \(M\) ist ein Element \(e\in M\), für das gilt:
+  \cloze{1}
+  \[
+    e\star x = x = x\star e
+  \]
+  für alle \(x\in M\).
+  \clend
+  \field
+  \field Gruppen
+  \field Definition
+  \field 02.03
 \end{note}
 
 \begin{note}{LinA-I-Gruppen-Verknüpfung-inverses-Element}
@@ -460,9 +463,11 @@
   \field
   \field
   In einer Gruppe \((G,\cdot)\) ist das Inverse eines Produkts \(x\cdot y\) gegeben durch
-  \begin{tabular}{rcl}
-    \((x\cdot y)^{-1}\) & \(~=~\) & \cloze{1}\(y^{-1}\cdot x^{-1}\)\clend
-  \end{tabular}
+  \begin{center}
+    \begin{tabular}{rcl}
+      \((x\cdot y)^{-1}\) & \(~=~\) & \cloze{1}\(y^{-1}\cdot x^{-1}\)\clend
+    \end{tabular}
+  \end{center}
   \field
   \emph{Reihenfolge beachten!}
   \field Gruppen
@@ -474,10 +479,12 @@
   \field
   \field
   Eine \textbf{Untergruppe} einer Gruppe \((G,\cdot)\) ist eine Teilmenge \(H\subset G\), für die gilt:
-  \begin{enumerate}
-  \item Die Verknüpfung \(\cdot\) lässt sich \cloze{1}einschränken zu einer Verknüpfung \(H\times H\to H\).\clend
-  \item \cloze{2}Zusammen mit der eingeschränkten Verknüpfung ist \(H\) selbst wieder eine Gruppe.\clend
-  \end{enumerate}
+  \begin{center}
+    \begin{enumerate}
+    \item Die Verknüpfung \(\cdot\) lässt sich \cloze{1}einschränken zu einer Verknüpfung \(H\times H\to H\).\clend
+    \item \cloze{2}Zusammen mit der eingeschränkten Verknüpfung ist \(H\) selbst wieder eine Gruppe.\clend
+    \end{enumerate}
+  \end{center}
   \field
   \field Gruppen
   \field Definition
@@ -489,7 +496,7 @@
   \field
   Sei \((G,\cdot)\) eine Gruppe mit neutralem Element \(1_G\). Eine Teilmenge \(H\subset G\) ist genau dann eine Untergruppe, wenn gilt:
   \begin{center}
-    \begin{enumerate}[(i)]
+    \begin{enumerate}
     \item \cloze{1}\(1_G \in H\)\clend
     \item \cloze{2}\(\forall x,y\in H\colon x\cdot y \in H\)\clend
     \item \cloze{3}\(\forall x\in H\colon \quad x^{-1} \in H\)\clend
@@ -504,10 +511,10 @@
 \begin{note}{LinA-I-Gruppen-Homomorphismus}
   \field
   \field
-  Eine Abbildung zwischen Gruppen \(f\colon (G,\star)\to(H,\ast)\) ist ein \textbf{Gruppenhomomorphismus}, falls gilt:
+  Eine Abbildung zwischen Gruppen \(f\colon (G,\star)\to(H,\cdot)\) ist ein \textbf{Gruppenhomomorphismus}, falls gilt:
   \cloze{1}
   \[
-    f(g_1\star g_2) = f(g_1)\ast f(g_2)
+    f(g_1\star g_2) = f(g_1)\cdot f(g_2)
   \]
   für alle \(g_1,g_2 \in G\).
   \clend
@@ -527,10 +534,10 @@
   \field 02.15
 \end{note}
 
-\begin{note}{LinA-I-Gruppen-Untergruppe-Linksnebenklasse}
+\begin{note}{LinA-I-Gruppen-Untergruppe-Links-Nebenklasse}
   \field
   \field
-  Die \textbf{Linksnebenklasse} eines Gruppenelements \(g\) bezüglich einer Untergruppe \(H\) von \((G,\star)\) ist die Teilmenge
+  Die \textbf{Links-Nebenklasse} eines Gruppenelements \(g\) bezüglich einer Untergruppe \(H\) von \((G,\star)\) ist die Teilmenge
   \cloze{1}
   \[
     g\star H := \{g\star h \mid h\in H\}.
@@ -545,7 +552,7 @@
 \begin{note}{LinA-I-Gruppen-Untergruppe-normal}
   \field
   \field
-  Eine Untergruppe ist \textbf{normal}, wenn \cloze{1}Links- und Rechtsnebenklassen übereinstimmen.\clend
+  Eine Untergruppe ist \textbf{normal}, wenn \cloze{1}Links- und Rechts-Nebenklassen übereinstimmen.\clend
   \field
   (\(g\star H = H\star g\) für alle \(g\in G\).)
   \field Gruppen
@@ -553,12 +560,12 @@
   \field 02.19
 \end{note}
 
-\begin{note}{LinA-I-Gruppen-Untergruppe-Linksnebenklassen-Gruppenstruktur}
+\begin{note}{LinA-I-Gruppen-Nebenklassen-Gruppenstruktur}
   \field
   \field
-  Die Menge aller Linksnebenklassen einer Untergruppe besitzt eine natürliche Gruppenstruktur, sofern \cloze{1}die Untergruppe normal ist.\clend
+  Die Menge aller Links-Nebenklassen einer Untergruppe besitzt eine natürliche Gruppenstruktur, sofern \cloze{1}die Untergruppe normal ist.\clend
   \field
-  (In diesem Fall sind Linksnebenklassen gleich Rechtsnebenklassen, und die Menge aller dieser Nebenklassen mit obiger Gruppenstruktur heißt Quotientengruppe.)
+  (In diesem Fall sind Links-Nebenklassen gleich Rechts-Nebenklassen, und die Menge aller dieser Nebenklassen mit obiger Gruppenstruktur heißt Quotientengruppe.)
   \field Gruppen
   \field Satz  
   \field 2.21
@@ -567,8 +574,9 @@
 \begin{note}{LinA-I-Gruppen-Quotientengruppe}
   \field
   \field
-  Die \textbf{Quotientengruppe} \(G/H\) einer Gruppe modulo einer normalen Untergruppe besteht aus \cloze{1}den (Rechts- = Links-)\allowbreak Nebenklassen von \(H\) in \(G\).\clend
+  Die \textbf{Quotientengruppe} \(G/H\) einer Gruppe modulo einer \cloze{1}normalen\clend\ Untergruppe besteht aus den \cloze{2}(Links-)Nebenklassen von \(H\) in \(G\).\clend
   \field
+  (Da die Untergruppe normal ist, sind hier Links-Nebenklassen dasselbe wie Rechts-Nebenklassen.)
   \field Gruppen
   \field Definition
   \field 02.21
@@ -601,7 +609,7 @@
 \begin{note}{LinA-I-Gruppen-Def-symmetrische-Gruppe-b}
   \field
   \field
-  Die \textbf{symmetrische Gruppe} \(S_n\) ist die Menge aller \(n\)-stelliger Permutationen zusammen mit \cloze{2}der Komposition\clend\ als Verknüpfung.
+  Die \textbf{symmetrische Gruppe} \(S_n\) ist die Menge aller \(n\)-stelligen Permutationen zusammen mit \cloze{2}der Komposition\clend\ als Verknüpfung.
   \field
   \field Gruppen
   \field Definition  
@@ -611,10 +619,11 @@
 \begin{note}{LinA-I-Gruppen-Def-Permutation-Fehlstand}
   \field
   \field
-  Ein \textbf{Fehlstand} einer Permutation \(\sigma\in S_n\) ist \cloze{1}eine zwei-elementige Teilmenge \(\{i,k\}\subseteq\{1,\dots, n\}\) mit
-  \begin{align*}
-    && i&<k &&\text{ und } &\sigma(i) &> \sigma(k)
-  \end{align*}
+  Ein \textbf{Fehlstand} einer \(n\)-stelligen Permutation \(\sigma\) ist \cloze{1}eine zwei-elementige Teilmenge \(\{i,k\}\subseteq\{1,\dots, n\}\) mit
+  \begin{center}
+    \par
+     \(i < k\)  und  \(\sigma(i) > \sigma(k)\)
+  \end{center}
   \clend
   \field
   \field Gruppen
@@ -626,9 +635,11 @@
   \field
   \field
   Das \textbf{Signum} einer Permutation \(\sigma\) ist gegeben durch
-  \begin{tabular}{rcl}
-    \(\signum(\sigma)\) & \(~:=~\) & \cloze{1}\((-1)^{\text{Anzahl der Fehlstände von \(\sigma\)}}\)\clend
-  \end{tabular}
+  \begin{center}
+    \begin{tabular}{rcl}
+      \(\signum(\sigma)\) & \(~:=~\) & \cloze{1}\((-1)^{\text{Anzahl der Fehlstände von } \sigma}\)\clend
+    \end{tabular}
+  \end{center}
   \field
   \field Gruppen
   \field Definition
